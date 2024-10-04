@@ -17,11 +17,7 @@
           "#d8b365",
           "#a6611a" 
         ]
-      },"legend": {
-            "orient": "left",
-            "dx": 150, 
-            "dy": 40
-          }},
+      }},
     "tooltip": [{"field": "category","title":"Purpose: ", "type": "nominal"}, {"field": "total","title":"Number of Travellers: ", "type": "quantitative"}
     ]
   }},
