@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tourism in Australia</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+</head>
+
+<body>
+    <div>
+      <div>
+        <h1>Australian Tourism</h1>
+        <p>Trends and Statistics</p>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <h2>Average visitors per month</h2>
+          <p> During the global pandemic, Australia's tourism industry took a signifcant hit. It has since been struggling to return back to a prosperous industry in Australia. 
+            The following visualisation explores various facets of Australian tourismm that can be targetted to improve this industry and boost the economy in Australia.
+          </p>
+        </div>
+      </div>
+      <div>
+        <div id="vis1"></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <h2>Global Travellers</h2>
+          <p>This map shows what nationality visitors arriving in Australia July 2024 had.</p>
+        </div>
+      </div>
+      <div>
+        <div id="vis2"></div>
+      </div>
+
+    </div>
+
+    <div>
+      <div>
+        <p>This visualisation is created by Anusha. The datasource is ABS</p>
+      </div>
+    </div>
+
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    var specVis1 = "./isotype_money.json";
+    var specVis2 = "./pos_neg_bar_chart.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false });
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+  </script>
+</body>
+
+</html>
